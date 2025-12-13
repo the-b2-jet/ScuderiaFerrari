@@ -214,3 +214,90 @@ h2::after {
 .driver-info h3, .race-highlights .race-content h3 { font-size: 1.4rem;
      margin-bottom: .5rem; 
 }
+.monza-stats .monza-quote { margin-top: 3rem; 
+    padding: 2rem; 
+    background: #1a1a1a; 
+    border-radius: 10px; 
+    border-left: 4px solid #e3000e; 
+}
+.monza-stats .monza-quote blockquote {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    border-left: none;
+    background: transparent;
+}
+.monza-stats .monza-quote cite {
+    display: block;
+    font-style: normal;
+    color: #d4af37;
+    font-weight: 500;
+    text-align: right;
+}
+.championship-table, .table-container {
+    overflow-x: auto;
+}
+.championship-table {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+thead {
+    background: #e3000e;
+}
+th {
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+tbody tr {
+    border-bottom: 1px solid #333;
+    transition: .3s;
+}
+tbody tr:hover {
+    background: rgba(227, 0, 14, .05);
+}
+td {
+    padding: 1rem;
+    color: #f0f0f0;
+}
+td:first-child {
+    font-weight: 600;
+    color: #d4af37;
+}
+footer, .site-footer {
+    background: #0a0a0a;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 2px solid #8a0008;
+}
+.site-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer p, .site-footer p { margin-bottom: .5rem; }
+.footer-nav { margin-top: 1.5rem; }
+.footer-nav a, .footer-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 .5rem;
+    transition: .3s;
+}
+.footer-nav a:hover, .footer-links a:hover {
+    color: #e3000e;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
