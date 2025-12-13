@@ -208,7 +208,7 @@ h2::after {
 .race-highlights .icon-img { width: 80px; 
     height: 80px; 
     object-fit: contain;
-    filter: brightness(0) invert(1); }
+}
 
 .driver-info, .race-highlights .race-content { padding: 1.5rem; }
 .driver-info h3, .race-highlights .race-content h3 { font-size: 1.4rem;
