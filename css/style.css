@@ -161,3 +161,56 @@ h2::after {
 .stats .label, .stats .stat-label { font-size: 1rem;
     color: #f0f0f0; 
 }
+.drivers-scroll, .race-highlights .race-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #e3000e #1a1a1a;
+}
+.drivers-scroll::-webkit-scrollbar, .race-highlights .race-carousel::-webkit-scrollbar { height: 6px; }
+.drivers-scroll::-webkit-scrollbar-track, .race-highlights .race-carousel::-webkit-scrollbar-track { background: #1a1a1a; }
+.drivers-scroll::-webkit-scrollbar-thumb, .race-highlights .race-carousel::-webkit-scrollbar-thumb { background: #e3000e; border-radius: 3px; }
+
+.driver-card, .race-highlights .race-card { 
+    flex: 0 0 280px; 
+    overflow: hidden; 
+}
+.race-highlights .race-card { 
+    flex-basis: 300px; 
+} 
+.driver-card:hover, .race-highlights .race-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(227,0,14,.2); 
+}
+.race-highlights .carousel-track { 
+    display: flex;
+    gap: 1.5rem; 
+    min-width: min-content; 
+}
+.driver-img, .race-highlights .race-icon { 
+    height: 200px; 
+    overflow: hidden; 
+    background: #0a0a0a; 
+    position: relative; }
+.race-highlights .race-icon { 
+    height: 150px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; padding: 2rem; }
+.driver-img img { width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    transition: .5s; 
+}
+.driver-card:hover .driver-img img { transform: scale(1.05); }
+.race-highlights .icon-img { width: 80px; 
+    height: 80px; 
+    object-fit: contain;
+    filter: brightness(0) invert(1); }
+
+.driver-info, .race-highlights .race-content { padding: 1.5rem; }
+.driver-info h3, .race-highlights .race-content h3 { font-size: 1.4rem;
+     margin-bottom: .5rem; 
+}
