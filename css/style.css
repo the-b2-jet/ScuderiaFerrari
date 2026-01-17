@@ -301,3 +301,31 @@ footer p, .site-footer p { margin-bottom: .5rem; }
     justify-content: center;
     gap: 1rem;
 }
+
+.reveal-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.drivers-scroll.active-drag, 
+.race-carousel.active-drag {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.fav-btn {
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.3s;
+}
+.fav-btn.active {
+    color: #e3000e;
+}
